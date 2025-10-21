@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>611 GROUP - تجربة موقع</title>
+  <style>
+    body {
+      margin:0;
+      padding:0;
+      background:#111827;
+      color:#f9fafb;
+      font-family: 'Cairo', sans-serif;
+      direction: rtl;
+    }
+    .header {
+      background: linear-gradient(90deg, #7f1d1d, #b91c1c);
+      padding: 15px 20px;
+      text-align: center;
+    }
+    .header h1 {
+      margin:0;
+      font-size:28px;
+      color:#fff;
+    }
+    .header h1 span {
+      color:#f87171;
+    }
+    .container {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+    .card {
+      background:#1f2937;
+      border:1px solid #374151;
+      border-radius:10px;
+      overflow:hidden;
+      margin-bottom:20px;
+      box-shadow:0 6px 18px rgba(0,0,0,0.4);
+    }
+    .card img {
+      width:100%;
+      display:block;
+    }
+    .card-content {
+      padding: 16px;
+    }
+    .card-content h3 {
+      margin: 0 0 8px;
+      font-size:20px;
+    }
+    .card-content p {
+      margin: 0 0 12px;
+      color:#9ca3af;
+      font-size:14px;
+    }
+    .meta {
+      display:flex;
+      align-items:center;
+      margin-bottom:12px;
+    }
+    .pill {
+      font-size:12px;
+      padding:5px 10px;
+      border-radius:20px;
+      color:#fff;
+      margin-left:auto;
+    }
+    .pill.paid {
+      background:#f59e0b;
+    }
+    .pill.free {
+      background:#10b981;
+    }
+    .actions {
+      display:flex;
+      gap:8px;
+    }
+    .btn {
+      flex:1;
+      padding:10px;
+      font-size:14px;
+      border:none;
+      border-radius:6px;
+      cursor:pointer;
+      font-weight:600;
+    }
+    .btn.details {
+      background:#ef4444;
+      color:#fff;
+    }
+    .btn.download {
+      background:#374151;
+      color:#fff;
+    }
+    .footer {
+      text-align:center;
+      padding:20px;
+      color:#9ca3af;
+      font-size:13px;
+      border-top:1px solid #222;
+      margin-top:40px;
+    }
+    @media(max-width:600px){
+      .card-content h3 { font-size:18px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <h1>611 <span>GROUP</span></h1>
+  </header>
+
+  <div class="container">
+    <div class="card">
+      <img src="https://via.placeholder.com/900x300.png?text=Tool+Preview" alt="معاينة الأداة">
+      <div class="card-content">
+        <h3>أداة تجريبية للتحميل</h3>
+        <p>هذا وصف تجريبي للأداة، يمكنك استبدال الوصف بالرابط والأداة الفعلية التي تريدها.</p>
+        <div class="meta">
+          <div class="pill paid">Paid</div>
+          <div>قسم: أدوات</div>
+        </div>
+        <div class="actions">
+          <button class="btn details" onclick="alert('تفاصيل الأداة التجريبية')">View Details</button>
+          <button class="btn download" onclick="downloadFile()">Download</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    © 2025 611 GROUP ‑ All rights reserved.
+  </footer>
+
+  <script>
+    function downloadFile(){
+      const url = 'https://example.com/file-demo.zip';
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = '611GROUP_tool.zip';
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+    }
+  </script>
+</body>
+</html>
